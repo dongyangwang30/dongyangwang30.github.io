@@ -413,13 +413,13 @@ window.PORTFOLIO={
       "id": "apocalypse",
       "section": "games",
       "href": "https://apocalypse.restingcats.com/",
-      "image": "assets/apocalypse-start.jpg",
+      "image": "assets/apocalypse-current.jpg",
       "en": {
         "name": "Apocalypse Sim",
         "imageAlt": "Apocalypse Sim start screen",
         "description": "",
         "type": "",
-        "action": "Play"
+        "action": "Play · Chinese"
       },
       "zh": {
         "name": "末世模拟器",
@@ -433,9 +433,10 @@ window.PORTFOLIO={
       "id": "sf-life",
       "section": "games",
       "href": "https://sf.restingcats.com/",
-      "image": "assets/sf-life-start.webp",
       "en": {
         "name": "SF Life",
+        "href": "https://sf.restingcats.com/en",
+        "image": "assets/sf-life-en-current.jpg",
         "description": "",
         "type": "",
         "action": "Play",
@@ -443,6 +444,8 @@ window.PORTFOLIO={
       },
       "zh": {
         "name": "湾区模拟器",
+        "href": "https://sf.restingcats.com/?lang=zh",
+        "image": "assets/sf-life-zh-current.jpg",
         "description": "",
         "type": "",
         "action": "进入游戏",
@@ -453,9 +456,10 @@ window.PORTFOLIO={
       "id": "frontline",
       "section": "games",
       "href": "https://fc.restingcats.com/",
-      "image": "assets/frontline-clean.webp",
       "en": {
         "name": "Frontline Company",
+        "href": "https://fc.restingcats.com/en/",
+        "image": "assets/frontline-en-current.jpg",
         "description": "",
         "type": "",
         "action": "Play",
@@ -463,6 +467,8 @@ window.PORTFOLIO={
       },
       "zh": {
         "name": "战线连队",
+        "href": "https://fc.restingcats.com/",
+        "image": "assets/frontline-zh-current.jpg",
         "description": "",
         "type": "",
         "action": "进入游戏",

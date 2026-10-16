@@ -81,11 +81,12 @@ createMosaic(data.photos,gallery);
 function renderProjects(){
  const apps=document.getElementById('apps-grid');const games=document.getElementById('games-grid');apps.replaceChildren();games.replaceChildren();
  data.projects.forEach(project=>{
-  const text=project[language];const card=element('a','project-card');card.href=project.href;card.dataset.project=project.id;
+  const text=project[language];const card=element('a','project-card');card.href=text.href||project.href;card.dataset.project=project.id;
   card.append(element('h2','',text.name));
   if(text.description)card.append(element('p','project-description',text.description));
   card.append(element('span','project-action',text.action));
-  if(project.image){const figure=element('figure','project-figure');const img=element('img');Object.assign(img,{src:project.image,alt:text.imageAlt,loading:'lazy'});figure.append(img);card.append(figure);}
+  const image=text.image||project.image;
+  if(image){const figure=element('figure','project-figure');const img=element('img');Object.assign(img,{src:image,alt:text.imageAlt,loading:'lazy'});figure.append(img);card.append(figure);}
   (project.section==='apps'?apps:games).append(card);
  });
 }
