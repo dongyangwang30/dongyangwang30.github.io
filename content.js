@@ -412,7 +412,7 @@ window.PORTFOLIO={
     {
       "id": "sf-life",
       "section": "games",
-      "href": "https://sf-life.dongyangwang30.chatgpt.site",
+      "href": "https://sf.restingcats.com/",
       "image": "assets/sf-life-start.webp",
       "en": {
         "name": "SF Life",
@@ -432,7 +432,7 @@ window.PORTFOLIO={
     {
       "id": "frontline",
       "section": "games",
-      "href": "https://frontline-company.polyester-turkey.workers.dev/en/",
+      "href": "https://fc.restingcats.com/",
       "image": "assets/frontline-clean.webp",
       "en": {
         "name": "Frontline Company",

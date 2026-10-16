@@ -8,8 +8,8 @@ const contactToggle=document.getElementById('contact-toggle');
 let language='en';
 try{language=localStorage.getItem('portfolio-language')==='zh'?'zh':'en';}catch{}
 const element=(tag,cls,text)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(text)n.textContent=text;return n;};
-const aliases={home:'about',project:'projects',photography:'art/photography',music:'art/guitar',life:'art/guitar',culture:'art/books',contact:'about/contact'};
-const targets={'art/photography':'art-photography','art/guitar':'art-guitar','art/books':'art-books','about/contact':'contact-toggle'};
+const aliases={home:'about',project:'projects',photography:'art/photography',music:'art/guitar',life:'art/guitar',culture:'art','art/books':'art',contact:'about/contact'};
+const targets={'art/photography':'art-photography','art/guitar':'art-guitar','about/contact':'contact-toggle'};
 function setContact(open){contact.hidden=!open;contactToggle.setAttribute('aria-expanded',String(open));contactToggle.setAttribute('aria-label',language==='en'?(open?'Hide contact links':'Show contact links'):(open?'收起联系方式':'显示联系方式'));}
 contactToggle.addEventListener('click',()=>setContact(contact.hidden));
 document.addEventListener('keydown',e=>{if(e.key==='Escape')setContact(false);});

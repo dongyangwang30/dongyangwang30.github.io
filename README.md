@@ -2,7 +2,7 @@
 
 Personal website: https://dongyangwang30.github.io/
 
-A bilingual portfolio of projects, photography, music, books, and film.
+A bilingual portfolio of projects, photography, and music.
 
 Published by GitHub Pages from the root of the main branch. No build step or paid hosting service is required.
 
