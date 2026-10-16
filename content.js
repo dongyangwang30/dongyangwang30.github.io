@@ -410,6 +410,23 @@ window.PORTFOLIO={
       }
     },
     {
+      "id": "apocalypse",
+      "section": "games",
+      "href": "https://apocalypse.restingcats.com/",
+      "en": {
+        "name": "Apocalypse Sim",
+        "description": "",
+        "type": "",
+        "action": "Play"
+      },
+      "zh": {
+        "name": "末世模拟器",
+        "description": "",
+        "type": "",
+        "action": "进入游戏"
+      }
+    },
+    {
       "id": "sf-life",
       "section": "games",
       "href": "https://sf.restingcats.com/",
