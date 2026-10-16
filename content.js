@@ -413,14 +413,17 @@ window.PORTFOLIO={
       "id": "apocalypse",
       "section": "games",
       "href": "https://apocalypse.restingcats.com/",
+      "image": "assets/apocalypse-start.jpg",
       "en": {
         "name": "Apocalypse Sim",
+        "imageAlt": "Apocalypse Sim start screen",
         "description": "",
         "type": "",
         "action": "Play"
       },
       "zh": {
         "name": "末世模拟器",
+        "imageAlt": "末世模拟器首页",
         "description": "",
         "type": "",
         "action": "进入游戏"
