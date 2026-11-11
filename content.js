@@ -393,20 +393,132 @@ window.PORTFOLIO={
   ],
   "projects": [
     {
+      "id": "cloud-island",
+      "section": "apps",
+      "href": "https://apps.apple.com/app/id6819491187",
+      "icon": "assets/icons/cloud-island.png",
+      "en": {
+        "name": "Cloud Island",
+        "description": "A quiet island for your days and moods.",
+        "type": "",
+        "action": "App Store"
+      },
+      "zh": {
+        "name": "云中小岛",
+        "description": "一座安静的小岛，写下日常与心情。",
+        "type": "",
+        "action": "App Store"
+      }
+    },
+    {
       "id": "overthinking",
       "section": "apps",
       "href": "https://apps.apple.com/app/id6810242807",
+      "icon": "assets/icons/overthinking.png",
       "en": {
         "name": "One Tap Overthinking",
-        "description": "Track the time and causes of overthinking.",
+        "description": "Log how long you overthink, and why.",
         "type": "",
-        "action": "iOS App Store"
+        "action": "App Store"
       },
       "zh": {
         "name": "一键内耗",
-        "description": "记录内耗的时长与原因。",
+        "description": "记下每次内耗的时长与原因。",
         "type": "",
-        "action": "iOS App Store"
+        "action": "App Store"
+      }
+    },
+    {
+      "id": "reviewcards",
+      "section": "apps",
+      "href": "https://apps.apple.com/us/app/id6821502854",
+      "icon": "assets/icons/reviewcards.png",
+      "en": {
+        "name": "Finance Exam Review Cards",
+        "description": "CFA and FRM flashcards and practice.",
+        "type": "",
+        "action": "App Store"
+      },
+      "zh": {
+        "name": "金融证书复习卡",
+        "description": "CFA 与 FRM 的知识卡和练习题。",
+        "type": "",
+        "action": "App Store"
+      }
+    },
+    {
+      "id": "yanmo",
+      "section": "apps",
+      "href": "https://yanmo.restingcats.com/",
+      "icon": "assets/icons/yanmo.png",
+      "en": {
+        "name": "Yanmo",
+        "description": "A quiet studio for long-form writing.",
+        "type": "",
+        "action": "Web · Chinese"
+      },
+      "zh": {
+        "name": "研墨",
+        "description": "写长篇的安静写作室。",
+        "type": "",
+        "action": "打开网页版"
+      }
+    },
+    {
+      "id": "compass",
+      "section": "apps",
+      "href": "https://restingcats.com/#apps",
+      "icon": "assets/icons/compass.png",
+      "en": {
+        "name": "Weekly Compass",
+        "description": "Spend your week on what matters.",
+        "type": "",
+        "action": "Coming soon",
+        "href": "https://restingcats.com/en/#apps"
+      },
+      "zh": {
+        "name": "每周罗盘",
+        "description": "把每周的时间花在在乎的事上。",
+        "type": "",
+        "action": "即将上线"
+      }
+    },
+    {
+      "id": "breath",
+      "section": "apps",
+      "href": "https://restingcats.com/#apps",
+      "icon": "assets/icons/breath.png",
+      "en": {
+        "name": "Take a Breath",
+        "description": "Write a worry, see if it came true.",
+        "type": "",
+        "action": "Coming soon",
+        "href": "https://restingcats.com/en/#apps"
+      },
+      "zh": {
+        "name": "松口气",
+        "description": "写下担心，看它有没有发生。",
+        "type": "",
+        "action": "即将上线"
+      }
+    },
+    {
+      "id": "budget",
+      "section": "apps",
+      "href": "https://restingcats.com/#apps",
+      "icon": "assets/icons/budget.png",
+      "en": {
+        "name": "Budget Control",
+        "description": "Calm budgeting, every coin in view.",
+        "type": "",
+        "action": "Coming soon",
+        "href": "https://restingcats.com/en/#apps"
+      },
+      "zh": {
+        "name": "极简预算",
+        "description": "安静记账，看清每一笔钱。",
+        "type": "",
+        "action": "即将上线"
       }
     },
     {
@@ -473,6 +585,46 @@ window.PORTFOLIO={
         "type": "",
         "action": "进入游戏",
         "imageAlt": "战线连队战场画面"
+      }
+    },
+    {
+      "id": "box",
+      "section": "toys",
+      "href": "https://box.restingcats.com/",
+      "image": "assets/box-og.jpg",
+      "en": {
+        "name": "Name Surprise",
+        "imageAlt": "Name Surprise figures",
+        "description": "Type a name, unbox a tiny figure.",
+        "type": "",
+        "action": "Play · Chinese"
+      },
+      "zh": {
+        "name": "名字盲盒",
+        "imageAlt": "名字盲盒的小公仔",
+        "description": "输入名字，拆一只小公仔。",
+        "type": "",
+        "action": "去玩"
+      }
+    },
+    {
+      "id": "sky",
+      "section": "toys",
+      "href": "https://sky.restingcats.com/",
+      "image": "assets/sky-og.jpg",
+      "en": {
+        "name": "What Is Your Weather",
+        "imageAlt": "Floating island weather results",
+        "description": "Eight questions, the weather inside you.",
+        "type": "",
+        "action": "Play · Chinese"
+      },
+      "zh": {
+        "name": "你是什么天气",
+        "imageAlt": "你是什么天气的小岛结果",
+        "description": "八个问题，看看你心里的天气。",
+        "type": "",
+        "action": "去玩"
       }
     }
   ]

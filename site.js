@@ -79,15 +79,16 @@ if(typeof ResizeObserver!=='undefined'){
 }
 createMosaic(data.photos,gallery);
 function renderProjects(){
- const apps=document.getElementById('apps-grid');const games=document.getElementById('games-grid');apps.replaceChildren();games.replaceChildren();
+ const grids={apps:document.getElementById('apps-grid'),games:document.getElementById('games-grid'),toys:document.getElementById('toys-grid')};Object.values(grids).forEach(g=>g&&g.replaceChildren());
  data.projects.forEach(project=>{
   const text=project[language];const card=element('a','project-card');card.href=text.href||project.href;card.dataset.project=project.id;
+  if(project.icon){const icon=element('img','project-icon');Object.assign(icon,{src:project.icon,alt:'',width:56,height:56,loading:'lazy'});card.append(icon);}
   card.append(element('h2','',text.name));
   if(text.description)card.append(element('p','project-description',text.description));
   card.append(element('span','project-action',text.action));
   const image=text.image||project.image;
   if(image){const figure=element('figure','project-figure');const img=element('img');Object.assign(img,{src:image,alt:text.imageAlt,loading:'lazy'});figure.append(img);card.append(figure);}
-  (project.section==='apps'?apps:games).append(card);
+  (grids[project.section]||grids.games).append(card);
  });
 }
 function applyLanguage(){
