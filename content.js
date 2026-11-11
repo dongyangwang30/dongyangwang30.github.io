@@ -1,4 +1,4 @@
-window.PORTFOLIO = {
+window.PORTFOLIO={
   "photos": [
     {
       "src": "assets/photography/35.webp",
@@ -591,7 +591,7 @@ window.PORTFOLIO = {
       "id": "box",
       "section": "games",
       "href": "https://box.restingcats.com/",
-      "image": "assets/box-og.jpg",
+      "image": "assets/box-game.jpg",
       "en": {
         "name": "Name Surprise",
         "imageAlt": "Name Surprise figures",
