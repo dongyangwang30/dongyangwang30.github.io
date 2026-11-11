@@ -79,21 +79,23 @@ if(typeof ResizeObserver!=='undefined'){
 }
 createMosaic(data.photos,gallery);
 function renderProjects(){
- const grids={apps:document.getElementById('apps-grid'),games:document.getElementById('games-grid'),toys:document.getElementById('toys-grid')};Object.values(grids).forEach(g=>g&&g.replaceChildren());
+ const grids={life:document.getElementById('life-grid'),tools:document.getElementById('tools-grid'),games:document.getElementById('games-grid')};Object.values(grids).forEach(g=>g.replaceChildren());
  data.projects.forEach(project=>{
   const text=project[language];const card=element('a','project-card');card.href=text.href||project.href;card.dataset.project=project.id;
-  if(project.icon){const icon=element('img','project-icon');Object.assign(icon,{src:project.icon,alt:'',width:56,height:56,loading:'lazy'});card.append(icon);}
-  card.append(element('h2','',text.name));
-  if(text.description)card.append(element('p','project-description',text.description));
-  card.append(element('span','project-action',text.action));
   const image=text.image||project.image;
-  if(image){const figure=element('figure','project-figure');const img=element('img');Object.assign(img,{src:image,alt:text.imageAlt,loading:'lazy'});figure.append(img);card.append(figure);}
-  (grids[project.section]||grids.games).append(card);
+  if(image){const figure=element('figure','project-figure');const img=element('img');Object.assign(img,{src:image,alt:text.imageAlt,loading:'lazy',decoding:'async'});figure.append(img);card.append(figure);}
+  if(project.icon){const icon=element('img','project-icon');Object.assign(icon,{src:project.icon,alt:'',width:56,height:56,loading:'lazy'});card.append(icon);}
+  const copy=element('div','project-copy');
+  copy.append(element('h3','project-title',text.name));
+  if(text.description)copy.append(element('p','project-description',text.description));
+  copy.append(element('span','project-action',text.action));card.append(copy);
+  grids[project.section].append(card);
  });
 }
 function applyLanguage(){
  document.documentElement.lang=language==='zh'?'zh-CN':'en';
  document.querySelectorAll('[data-en][data-zh]').forEach(n=>n.textContent=n.dataset[language]);
+ document.querySelectorAll('[data-href-en][data-href-zh]').forEach(n=>n.href=language==='zh'?n.dataset.hrefZh:n.dataset.hrefEn);
  document.querySelectorAll('[data-alt-en][data-alt-zh]').forEach(n=>n.alt=language==='zh'?n.dataset.altZh:n.dataset.altEn);
  const button=document.getElementById('language-toggle');button.textContent=language==='en'?'中文':'EN';button.setAttribute('aria-label',language==='en'?'Switch to Chinese':'切换为英文');
  document.querySelector('.tabs').setAttribute('aria-label',language==='en'?'Pages':'页面');

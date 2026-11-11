@@ -1,4 +1,4 @@
-@font-face{font-family:WenKai;src:url('assets/fonts/wenkai-site.woff?v=21') format('woff');font-style:normal;font-weight:400;font-display:swap}
+@font-face{font-family:WenKai;src:url('assets/fonts/wenkai-site.woff?v=22') format('woff');font-style:normal;font-weight:400;font-display:swap}
 @font-face{font-family:Cormorant;src:url('assets/fonts/cormorant-italic.woff') format('woff');font-style:italic;font-weight:400;font-display:swap}
 :root{color-scheme:light;--paper:#f1f2f3;--ink:#202327;--muted:#656b73;--line:#ccd0d4;--accent:#245ace;--font:WenKai,'Kaiti SC',KaiTi,serif;--ui:-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif;--ease:cubic-bezier(.22,.61,.36,1)}
 *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:32px}body{margin:0;background:var(--paper);color:var(--ink);font:400 1.0625rem/1.8 var(--font);-webkit-font-smoothing:antialiased}button,input{font:inherit;color:inherit}button{cursor:pointer;background:none;border:0}a{color:inherit;text-decoration:none}a,button,summary{-webkit-tap-highlight-color:transparent}h1,h2,h3,p,figure{margin:0}h1,h2,h3,strong{font-weight:400}img{display:block;max-width:100%}[hidden]{display:none!important}::selection{background:#dae3f4;color:#141a25}a:focus-visible,button:focus-visible,summary:focus-visible,[tabindex]:focus-visible{outline:2px solid var(--accent);outline-offset:6px}a,button,summary{touch-action:manipulation}button,.small-button,.work-index>a{transition:color .18s ease,background .18s ease,transform .18s var(--ease),border-color .18s ease}button:active,.small-button:active{transform:translateY(1px)}
@@ -67,3 +67,40 @@ html[lang=zh-CN] .site-footer>button{font-family:var(--ui)}
 
 /* page panels take focus when you switch tabs; no frame around the whole page */
 [role=tabpanel]:focus,[role=tabpanel]:focus-visible{outline:none}
+
+/* A quiet project index: one rule per category, no repeated card borders. */
+.projects-view{max-width:1120px;margin-inline:auto}
+.projects-view .page-heading{margin-bottom:22px}
+.projects-view .page-intro{margin-bottom:52px;max-width:680px}
+.projects-view .project-section{margin-top:0;padding-top:22px;border-top:1px solid var(--line)}
+.projects-view .project-section+.project-section{margin-top:56px}
+.projects-view .section-title{font-size:1.0625rem;line-height:1.5;margin-bottom:32px;color:var(--muted)}
+.projects-view .project-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:34px 56px}
+.projects-view .project-card{display:block;grid-column:auto;min-width:0;padding:0;border:0}
+.projects-view .utility-grid .project-card{display:grid;grid-template-columns:52px minmax(0,1fr);gap:18px;align-items:start}
+.projects-view .project-icon{width:52px;height:52px;object-fit:contain;border-radius:12px}
+.projects-view .project-copy{min-width:0}
+.projects-view .project-title{font-size:1.375rem;font-weight:400;line-height:1.4;overflow-wrap:anywhere}
+.projects-view .project-description{font-size:1rem;line-height:1.7;color:var(--muted);margin-top:6px}
+.projects-view .project-action{display:inline-flex;font-size:.875rem;line-height:1.5;min-height:32px;margin-top:8px;padding:4px 0;color:var(--muted);text-underline-offset:4px}
+.projects-view .project-card:focus-visible{outline:2px solid var(--accent);outline-offset:8px;border-radius:3px}
+.projects-view .project-card:hover .project-title{color:var(--accent)}
+.projects-view #games-grid{row-gap:36px}
+.projects-view .project-figure{margin:0 0 18px;aspect-ratio:1.6;background:#e9ebec;overflow:hidden}
+.projects-view .project-figure img{display:block;width:100%;height:100%;object-fit:contain;transform:none}
+.projects-view #games-grid .project-copy{display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:14px;align-items:baseline}
+.projects-view #games-grid .project-title{grid-column:1}
+.projects-view #games-grid .project-action{grid-column:2;grid-row:1;margin:0;white-space:nowrap}
+.projects-view #games-grid .project-description{grid-column:1/-1;margin-top:4px}
+@media(max-width:760px){
+ .projects-view .page-intro{margin-bottom:36px}
+ .projects-view .project-section+.project-section{margin-top:38px}
+ .projects-view .section-title{margin-bottom:26px}
+ .projects-view .project-grid{grid-template-columns:1fr;gap:26px}
+ .projects-view .utility-grid .project-card{grid-template-columns:46px minmax(0,1fr);gap:15px}
+ .projects-view .project-icon{width:46px;height:46px;border-radius:11px}
+ .projects-view .project-title{font-size:1.25rem}
+ .projects-view #games-grid .project-copy{display:block}
+ .projects-view #games-grid .project-action{margin-top:6px}
+ .projects-view .project-figure{margin-bottom:14px}
+}

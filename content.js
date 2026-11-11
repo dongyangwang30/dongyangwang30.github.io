@@ -1,4 +1,4 @@
-window.PORTFOLIO={
+window.PORTFOLIO = {
   "photos": [
     {
       "src": "assets/photography/35.webp",
@@ -394,7 +394,7 @@ window.PORTFOLIO={
   "projects": [
     {
       "id": "cloud-island",
-      "section": "apps",
+      "section": "life",
       "href": "https://apps.apple.com/app/id6819491187",
       "icon": "assets/icons/cloud-island.png",
       "en": {
@@ -412,7 +412,7 @@ window.PORTFOLIO={
     },
     {
       "id": "overthinking",
-      "section": "apps",
+      "section": "life",
       "href": "https://apps.apple.com/app/id6810242807",
       "icon": "assets/icons/overthinking.png",
       "en": {
@@ -430,7 +430,7 @@ window.PORTFOLIO={
     },
     {
       "id": "reviewcards",
-      "section": "apps",
+      "section": "tools",
       "href": "https://apps.apple.com/us/app/id6821502854",
       "icon": "assets/icons/reviewcards.png",
       "en": {
@@ -448,7 +448,7 @@ window.PORTFOLIO={
     },
     {
       "id": "yanmo",
-      "section": "apps",
+      "section": "tools",
       "href": "https://yanmo.restingcats.com/",
       "icon": "assets/icons/yanmo.png",
       "en": {
@@ -466,7 +466,7 @@ window.PORTFOLIO={
     },
     {
       "id": "compass",
-      "section": "apps",
+      "section": "tools",
       "href": "https://restingcats.com/#apps",
       "icon": "assets/icons/compass.png",
       "en": {
@@ -485,7 +485,7 @@ window.PORTFOLIO={
     },
     {
       "id": "breath",
-      "section": "apps",
+      "section": "life",
       "href": "https://restingcats.com/#apps",
       "icon": "assets/icons/breath.png",
       "en": {
@@ -504,7 +504,7 @@ window.PORTFOLIO={
     },
     {
       "id": "budget",
-      "section": "apps",
+      "section": "tools",
       "href": "https://restingcats.com/#apps",
       "icon": "assets/icons/budget.png",
       "en": {
@@ -571,7 +571,7 @@ window.PORTFOLIO={
       "en": {
         "name": "Frontline Company",
         "href": "https://fc.restingcats.com/en/",
-        "image": "assets/frontline-en-current.jpg",
+        "image": "assets/frontline-board.webp",
         "description": "",
         "type": "",
         "action": "Play",
@@ -580,7 +580,7 @@ window.PORTFOLIO={
       "zh": {
         "name": "战线连队",
         "href": "https://fc.restingcats.com/",
-        "image": "assets/frontline-zh-current.jpg",
+        "image": "assets/frontline-board.webp",
         "description": "",
         "type": "",
         "action": "进入游戏",
@@ -589,7 +589,7 @@ window.PORTFOLIO={
     },
     {
       "id": "box",
-      "section": "toys",
+      "section": "games",
       "href": "https://box.restingcats.com/",
       "image": "assets/box-og.jpg",
       "en": {
