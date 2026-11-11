@@ -571,7 +571,7 @@ window.PORTFOLIO={
       "en": {
         "name": "Frontline Company",
         "href": "https://fc.restingcats.com/en/",
-        "image": "assets/frontline-board.webp",
+        "image": "assets/frontline-current.jpg",
         "description": "",
         "type": "",
         "action": "Play",
@@ -580,7 +580,7 @@ window.PORTFOLIO={
       "zh": {
         "name": "战线连队",
         "href": "https://fc.restingcats.com/",
-        "image": "assets/frontline-board.webp",
+        "image": "assets/frontline-current.jpg",
         "description": "",
         "type": "",
         "action": "进入游戏",
