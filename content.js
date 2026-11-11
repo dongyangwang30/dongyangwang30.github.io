@@ -606,26 +606,6 @@ window.PORTFOLIO={
         "type": "",
         "action": "去玩"
       }
-    },
-    {
-      "id": "sky",
-      "section": "toys",
-      "href": "https://sky.restingcats.com/",
-      "image": "assets/sky-og.jpg",
-      "en": {
-        "name": "What Is Your Weather",
-        "imageAlt": "Floating island weather results",
-        "description": "Eight questions, the weather inside you.",
-        "type": "",
-        "action": "Play · Chinese"
-      },
-      "zh": {
-        "name": "你是什么天气",
-        "imageAlt": "你是什么天气的小岛结果",
-        "description": "八个问题，看看你心里的天气。",
-        "type": "",
-        "action": "去玩"
-      }
     }
   ]
 };
